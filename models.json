@@ -1,0 +1,63 @@
+{
+  "version": 1,
+  "revision": 2,
+  "updated": "2026-10-26",
+  "services": [
+    {
+      "id": "paddleocr-vl",
+      "label": "PaddleOCR-VL-1.6-0.9B",
+      "url": "https://paddleocr-vl-gateway.goldpigyan.workers.dev/ocr",
+      "model": "",
+      "local": "127.0.0.1:8866"
+    },
+    {
+      "id": "glm-ocr",
+      "label": "GLM-OCR",
+      "url": "https://ollama-gateway.goldpigyan.workers.dev/api/generate",
+      "model": "glm-ocr:latest",
+      "local": "127.0.0.1:11434"
+    },
+    {
+      "id": "mineru",
+      "label": "MinerU 4.0.12",
+      "url": "https://mineru-gateway.goldpigyan.workers.dev/file_parse",
+      "model": "pipeline",
+      "local": "127.0.0.1:8000"
+    },
+    {
+      "id": "whisper-large-v3",
+      "label": "Whisper large-v3",
+      "url": "https://whisper-gateway.goldpigyan.workers.dev",
+      "model": "large-v3",
+      "local": "127.0.0.1:11436"
+    },
+    {
+      "id": "sensevoice-small",
+      "label": "SenseVoiceSmall",
+      "url": "https://sensevoice-gateway.goldpigyan.workers.dev/v1/audio/transcriptions",
+      "model": "sensevoice",
+      "local": "127.0.0.1:18095"
+    },
+    {
+      "id": "movenet",
+      "label": "MoveNet SinglePose Lightning",
+      "url": "https://movenet-gateway.goldpigyan.workers.dev/predict",
+      "model": "",
+      "local": "127.0.0.1:8765"
+    },
+    {
+      "id": "rtmpose",
+      "label": "RTMPose-s",
+      "url": "https://rtmpose-gateway.goldpigyan.workers.dev/infer",
+      "model": "",
+      "local": "127.0.0.1:18110"
+    },
+    {
+      "id": "qwen2.5-vl",
+      "label": "Qwen2.5-VL",
+      "url": "https://ollama-gateway.goldpigyan.workers.dev/v1",
+      "model": "qwen2.5vl:3b",
+      "local": "127.0.0.1:11434"
+    }
+  ]
+}
