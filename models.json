@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 8,
+  "revision": 9,
   "updated": "2026-10-28",
   "services": [
     {
@@ -22,7 +22,7 @@
     {
       "id": "mineru",
       "label": "MinerU 4.0.12",
-      "url": "http://82.157.80.123:8000/file_parse",
+      "url": "http://82.157.80.123:8000/v1/file_parse",
       "model": "pipeline",
       "local": "82.157.80.123:8000",
       "key": "mineru-local"
