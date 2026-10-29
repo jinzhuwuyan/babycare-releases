@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "revision": 9,
-  "updated": "2026-10-28",
+  "revision": 10,
+  "updated": "2026-10-29",
   "services": [
     {
       "id": "paddleocr-vl",
       "label": "PaddleOCR-VL-1.6-0.9B",
-      "url": "https://paddleocr-vl-gateway.goldpigyan.workers.dev/ocr",
+      "url": "http://82.157.80.123:8866/ocr",
       "model": "",
       "local": "82.157.80.123:8866",
       "key": "Dvrorsfll-yzU8YjjJs9x_bFPgYfgySC"
