@@ -1,31 +1,15 @@
 {
   "version": 1,
-  "revision": 11,
-  "updated": "2026-10-30",
+  "revision": 12,
+  "updated": "2026-10-31",
   "services": [
-    {
-      "id": "paddleocr-vl",
-      "label": "PaddleOCR-VL-1.6-0.9B",
-      "url": "http://82.157.80.123:8866/ocr",
-      "model": "",
-      "local": "82.157.80.123:8866",
-      "key": "Dvrorsfll-yzU8YjjJs9x_bFPgYfgySC"
-    },
     {
       "id": "glm-ocr",
       "label": "GLM-OCR",
       "url": "https://ollama-gateway.goldpigyan.workers.dev/api/generate",
       "model": "glm-ocr:latest",
-      "local": "184.193.190.141:11434",
+      "local": "100.63.197.102:11434",
       "key": "DFPO0yAwahL91SB5Aa4LdcubvPnttL12ddqg_ruI38M"
-    },
-    {
-      "id": "mineru",
-      "label": "MinerU 4.0.12",
-      "url": "http://82.157.80.123:8000/v1/file_parse",
-      "model": "pipeline",
-      "local": "82.157.80.123:8000",
-      "key": "mineru-local"
     },
     {
       "id": "whisper-large-v3",
@@ -36,36 +20,12 @@
       "key": "2da95c1c10e5a0064c22b4fd79bf6883055496557f8a4b32"
     },
     {
-      "id": "sensevoice-small",
-      "label": "SenseVoiceSmall",
-      "url": "http://82.157.80.123:18096/v1/audio/transcriptions",
-      "model": "sensevoice",
-      "local": "82.157.80.123:18096",
-      "key": "5dd1bff9d6b8dc79711b201d64f2f42a770fdfc45aacd8ce"
-    },
-    {
-      "id": "movenet",
-      "label": "MoveNet SinglePose Lightning",
-      "url": "http://82.157.80.123:8765/predict",
-      "model": "",
-      "local": "82.157.80.123:8765",
-      "key": "7QHPNjT85jU3SlkcDJXY_tJByEqEVx4dhL9Axm8qMb0"
-    },
-    {
       "id": "rtmpose",
       "label": "RTMPose-s",
-      "url": "http://82.157.80.123:18110/infer",
+      "url": "http://198.23.189.151:18110/infer",
       "model": "",
-      "local": "82.157.80.123:18110",
+      "local": "198.23.189.151:18110",
       "key": "54060446a1ac877b18c50929eabda99ab4c4bab32a8437ed"
-    },
-    {
-      "id": "qwen2.5-vl",
-      "label": "Qwen2.5-VL",
-      "url": "http://82.157.80.123:11434/v1",
-      "model": "qwen2.5vl:3b",
-      "local": "82.157.80.123:11434",
-      "key": "DFPO0yAwahL91SB5Aa4LdcubvPnttL12ddqg_ruI38M"
     }
   ]
 }
