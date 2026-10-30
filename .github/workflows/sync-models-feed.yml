@@ -1,0 +1,25 @@
+name: sync-models-feed-asset
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - models.json
+      - .github/workflows/sync-models-feed.yml
+permissions:
+  contents: write
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Upload models.json to models-feed release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          REV=$(python3 -c 'import json; print(json.load(open("models.json"))["revision"])')
+          gh release upload models-feed models.json --clobber -R "${{ github.repository }}"
+          gh release edit models-feed -R "${{ github.repository }}" \
+            --title "模型热更新清单 models-feed（revision ${REV}）" \
+            --notes "Hot-update feed revision ${REV}. Source: repo-root models.json."
