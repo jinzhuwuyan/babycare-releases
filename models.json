@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "revision": 10,
-  "updated": "2026-10-29",
+  "revision": 11,
+  "updated": "2026-10-30",
   "services": [
     {
       "id": "paddleocr-vl",
@@ -14,9 +14,9 @@
     {
       "id": "glm-ocr",
       "label": "GLM-OCR",
-      "url": "http://82.157.80.123:11434/api/generate",
+      "url": "https://ollama-gateway.goldpigyan.workers.dev/api/generate",
       "model": "glm-ocr:latest",
-      "local": "82.157.80.123:11434",
+      "local": "184.193.190.141:11434",
       "key": "DFPO0yAwahL91SB5Aa4LdcubvPnttL12ddqg_ruI38M"
     },
     {
