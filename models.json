@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "revision": 12,
+  "revision": 13,
   "updated": "2026-10-31",
   "services": [
     {
@@ -8,7 +8,7 @@
       "label": "GLM-OCR",
       "url": "https://ollama-gateway.goldpigyan.workers.dev/api/generate",
       "model": "glm-ocr:latest",
-      "local": "100.63.197.102:11434",
+      "local": "82.157.80.123:11434",
       "key": "DFPO0yAwahL91SB5Aa4LdcubvPnttL12ddqg_ruI38M"
     },
     {
@@ -26,6 +26,14 @@
       "model": "",
       "local": "198.23.189.151:18110",
       "key": "54060446a1ac877b18c50929eabda99ab4c4bab32a8437ed"
+    },
+    {
+      "id": "movenet",
+      "label": "MoveNet SinglePose Lightning",
+      "url": "http://198.23.189.151:8765/predict",
+      "model": "",
+      "local": "198.23.189.151:8765",
+      "key": "7QHPNjT85jU3SlkcDJXY_tJByEqEVx4dhL9Axm8qMb0"
     }
   ]
 }
