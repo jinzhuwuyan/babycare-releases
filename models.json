@@ -1,15 +1,31 @@
 {
   "version": 1,
-  "revision": 13,
+  "revision": 14,
   "updated": "2026-10-31",
   "services": [
+    {
+      "id": "anthropic",
+      "label": "Anthropic",
+      "url": "https://api.anthropic.com/v1",
+      "model": "claude-haiku-4-5"
+    },
+    {
+      "id": "openai",
+      "label": "OpenAI",
+      "url": "https://api.openai.com/v1",
+      "model": "gpt-4o-mini"
+    },
     {
       "id": "glm-ocr",
       "label": "GLM-OCR",
       "url": "https://ollama-gateway.goldpigyan.workers.dev/api/generate",
       "model": "glm-ocr:latest",
       "local": "82.157.80.123:11434",
-      "key": "DFPO0yAwahL91SB5Aa4LdcubvPnttL12ddqg_ruI38M"
+      "key": "DFPO0yAwahL91SB5Aa4LdcubvPnttL12ddqg_ruI38M",
+      "options": {
+        "num_predict": 1024
+      },
+      "prompt": "请完整识别图中全部文字与表格内容，按原结构输出，不要省略字段值。"
     },
     {
       "id": "whisper-large-v3",
